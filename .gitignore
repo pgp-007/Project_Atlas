@@ -1,0 +1,17 @@
+# Ignore provider binaries and local state cache
+.terraform/
+
+# Ignore state files (may contain passwords / sensitive data)
+*.tfstate
+*.tfstate.*
+
+# Ignore variables files containing secrets
+*.tfvars
+*.tfvars.json
+
+# Ignore plan files and lock info
+*.tfplan
+.terraform.tfstate.lock.info
+*.txt
+*.mp4
+tf_tut/
