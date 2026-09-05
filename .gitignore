@@ -18,3 +18,4 @@
 *.php
 *.pem
 tf_tut/
+secrets/
