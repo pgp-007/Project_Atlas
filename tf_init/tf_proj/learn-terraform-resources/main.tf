@@ -1,8 +1,5 @@
-# Copyright (c) HashiCorp, Inc.
-# SPDX-License-Identifier: MPL-2.0
-
 provider "aws" {
-  region = "us-west-2"
+  region = "ap-south-1"
 }
 
 provider "random" {}
@@ -10,8 +7,8 @@ provider "random" {}
 resource "random_pet" "name" {}
 
 resource "aws_instance" "web" {
-  ami           = "ami-a0cfeed8"
-  instance_type = "t2.micro"
+  ami           = "ami-01a00762f46d584a1"
+  instance_type = "t3.micro"
   user_data     = file("init-script.sh")
 
   tags = {
