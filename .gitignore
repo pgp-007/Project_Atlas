@@ -9,11 +9,12 @@
 *.tfvars
 *.tfvars.json
 
-# Ignore plan files and lock info
+# Ignore plan files, lock info and misc
 *.tfplan
 .terraform.tfstate.lock.info
 *.txt
 *.mp4
 *.html
 *.php
+*.pem
 tf_tut/
