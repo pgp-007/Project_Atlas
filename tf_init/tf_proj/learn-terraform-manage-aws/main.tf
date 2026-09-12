@@ -11,8 +11,8 @@ data "aws_ami" "ubuntu_img" {
 }
 resource "aws_instance" "app_server" {
   ami           = data.aws_ami.ubuntu_img.id
-  instance_type = var.instance_type
+  instance_type = "t3.micro"
   tags = {
-    Name = var.instance_name
+    Name = "tf-instance"
   }
 }
