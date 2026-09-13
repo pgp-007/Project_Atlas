@@ -1,0 +1,10 @@
+variable "instance_name" {
+  description = "name of ec2 instance"
+  default     = "tf-var-ec2-instance"
+  type        = string
+}
+variable "instance_type" {
+  description = "type of ec2 isntance"
+  default     = "t3.micro"
+  type        = string
+}
