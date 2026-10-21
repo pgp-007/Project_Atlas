@@ -12,8 +12,8 @@ data "aws_ami" "ubuntu" {
 }
 resource "aws_instance" "pgp_server" {
   ami           = data.aws_ami.ubuntu.id
-  instance_type = "t3.micro"
+  instance_type = var.instance_type
   tags = {
-    Name = "Learning-EC2TF"
+    Name = var.instance_name
   }
 }
